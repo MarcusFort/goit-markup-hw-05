@@ -5,7 +5,7 @@
   --title-text-color-secondary: #434455;
   --primary-btn-bg-color: #4d5ae5;
   --secondary-btn-bg-color: #e7e9fc;
-  --primary-btn-color: #fff;
+  --primary-btn-color: #ffffff;
   --secondary-btn-color: #4d5ae5;
 }
 
@@ -188,7 +188,7 @@ ul {
 }
 
 .hero-h1 {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.08;
@@ -219,7 +219,7 @@ ul {
 
 .hero-startpage-btn:hover,
 .hero-startpage-btn:focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #404bbf;
   cursor: pointer;
   transition-duration: 250ms;
@@ -341,7 +341,7 @@ ul {
   border: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .position-section-3 > .li-width:nth-last-child(-n + 1) {
@@ -528,7 +528,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-ul {
@@ -548,7 +548,7 @@ ul {
 }
 
 .fotter-socialmedia-a:is(:hover, :focus) {
-  color: #fff;
+  color: #ffffff;
   background-color: #31d0aa;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -672,7 +672,7 @@ ul {
 
 .modal-close-button:is(:hover, :focus) {
   background-color: #404bbf;
-  fill: #fff;
+  fill: #ffffff;
   border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
