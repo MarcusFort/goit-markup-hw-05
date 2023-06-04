@@ -550,8 +550,7 @@ ul {
 .fotter-socialmedia-a:is(:hover, :focus) {
   color: #fff;
   background-color: #31d0aa;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fotter-socialmedia-li:nth-last-child(-n + 1) {
