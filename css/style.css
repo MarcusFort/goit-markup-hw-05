@@ -90,6 +90,7 @@ ul {
 
 .nav-title-list-text {
   font-family: "Roboto";
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -97,9 +98,28 @@ ul {
   color: #2e2f42;
 }
 
+.nav-title-list-text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: 40px;
+  border-radius: 2px;
+}
+
+.nav-title-list-text.active {
+  color: #404bbf;
+}
+.nav-title-list-text.active::after {
+  background: #404bbf;
+}
+
 .nav-title-list-text:hover,
 .nav-title-list-text:focus {
   color: #404bbf;
+  transition-duration: 250ms;
 }
 
 /* CONTACT */
@@ -128,6 +148,7 @@ ul {
 .nav-contact-list-text:hover,
 .nav-contact-list-text:focus {
   color: #404bbf;
+  transition-duration: 250ms;
 }
 
 /* MAIN */
@@ -200,6 +221,7 @@ ul {
   color: #fff;
   background-color: #404bbf;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 /* SECTION 1 */
@@ -387,6 +409,7 @@ ul {
 .socialmedia-icon:hover,
 .socialmedia-icon:focus {
   background-color: #404bbf;
+  transition-duration: 250ms;
 }
 
 .socialmedia-icon {
@@ -453,11 +476,13 @@ ul {
 .comp-icon-svg:focus {
   border: 1px solid #404bbf;
   background-color: #ffffff;
+  transition-duration: 250ms;
 }
 
 .comp-icon-svg:hover .comp-svg,
 .comp-icon-svg:focus .comp-svg {
   fill: #404bbf;
+  transition-duration: 250ms;
 }
 
 .icon-companies-li:nth-last-child(-n + 1) {
@@ -553,6 +578,7 @@ ul {
 .fotter-socialmedia-a:is(:hover, :focus) {
   color: #fff;
   background-color: #31d0aa;
+  transition-duration: 250ms;
 }
 
 .fotter-socialmedia-li:nth-last-child(-n + 1) {
@@ -611,6 +637,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
 }
 
 .portfolio-btn > .li-width {
@@ -619,6 +646,51 @@ ul {
 
 .portfolio-btn > .li-width:nth-last-child(-n + 1) {
   margin-right: 0px;
+}
+
+/* MODAL WINDOW */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(46, 47, 66, 0.4);
+  transition-duration: 250ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  width: 408px;
+  height: 576px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 /* PORTFOLIO PRODUCTS */
@@ -638,10 +710,45 @@ ul {
   margin-bottom: 48px;
 }
 
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+/*overlay*/
+.overlay {
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+  background: #4d5ae5;
+  mix-blend-mode: normal;
+  transform: translateY(100%);
+}
+
+.overlay-text {
+  position: absolute;
+  width: 296px;
+  height: 96px;
+  left: 32px;
+  top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.li-width:hover .overlay {
+  transform: translateY(0);
+  transition-duration: 250ms;
+}
+
 .portfolio-product-list .li-width:hover,
 .portfolio-product-list .li-width:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition-duration: 250ms;
 }
 
 .portfolio-product-list > .li-width:nth-child(3n + 3) {
