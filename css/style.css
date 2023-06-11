@@ -53,6 +53,7 @@ ul {
 
 .nav-title {
   display: flex;
+  position: relative;
 }
 
 .nav-title .nav-title-list:not(:last-child) {
@@ -126,6 +127,7 @@ ul {
 /* CONTACT */
 .nav-contact {
   margin-left: auto;
+  position: relative;
 }
 
 .nav-contact-content {
