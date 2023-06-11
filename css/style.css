@@ -201,8 +201,8 @@ ul {
 }
 
 .hero-startpage-btn {
-  color: var(--primary-btn-color);
-  background-color: var(--primary-btn-bg-color);
+  color: #ffffff;
+  background-color: #4d5ae5;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
