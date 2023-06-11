@@ -173,7 +173,7 @@ ul {
   background-position: center;
 }
 
-.position-h1,
+/* .position-h1,
 .position-button {
   display: block;
 }
@@ -185,7 +185,7 @@ ul {
 
 .position-button {
   margin-top: 48px;
-}
+} */
 
 .hero-h1 {
   color: #ffffff;
@@ -194,6 +194,8 @@ ul {
   line-height: 1.08;
   text-align: center;
   width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .position-button .hero-h1 {
