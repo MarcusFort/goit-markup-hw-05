@@ -220,12 +220,10 @@ ul {
 
 .hero-startpage-btn:hover,
 .hero-startpage-btn:focus {
-  color: #ffffff;
-  cursor: pointer;
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  color: #ffffff;
+  cursor: pointer;
 }
 
 /* SECTION 1 */
